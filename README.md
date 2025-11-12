@@ -62,6 +62,9 @@ To address these issues, filters were applied immediately after data loading, pa
 Transformations such as `filter`, `select`, `groupBy`, and `withColumn` are lazy operations that define the computation plan but do not trigger execution. In contrast, actions like `count`, `show`, and `collect` are eager operations that execute the plan and return results.  
 The performance comparison showed that defining all transformations took only 0.67 ms with no data processed, while executing the `count()` action took about 981 ms to process 66,791 rows. The `show()` action completed in 832 ms for 5 rows, and `collect()` ran in 478 ms for 10 rows. This demonstrates that transformations incur no cost until an action triggers Spark to execute the full computation.
 
+See this chart with performance time:
+
+![performance](screenshot/performance.png)
 
 ---
 
@@ -75,7 +78,7 @@ The performance comparison showed that defining all transformations took only 0.
 
 The results is stored in Databricks Volumn: My path is: `/Volumes/de/de/de/covid_pipeline_output`
 
-[]
+![File save](screenshot/volumn.png)
 
 
 ## Key Findings
@@ -94,7 +97,7 @@ Spark’s lazy evaluation enabled efficient query optimization before execution.
 ## Screenshots
 
 ### 1. Data Schema
-![Execution Plan](screenshot/data.png)
+![DATA](screenshot/data.png)
 
 
 ### 2. Query execution plan
