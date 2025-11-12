@@ -93,19 +93,20 @@ Spark’s lazy evaluation enabled efficient query optimization before execution.
 
 ## Screenshots
 
-### 1. Physical Execution Plan
-![Execution Plan](screenshots/execution_plan.png)
-*Shows Spark's optimized query plan with predicate pushdown and column pruning*
+### 1. Data Schema
+![Execution Plan](screenshot/data.png)
 
-### 2. Spark UI - Stages View
-![Spark UI Stages](screenshots/spark_ui_stages.png)
-*Displays the stages, tasks, and shuffle operations during execution*
+
+### 2. Query execution plan
+![Spark UI Stages](screenshot/explain.png)
+![Spark UI Stages](screenshot/explain2.png)
+
 
 ### 3. Query Details
-![Query Details](screenshots/query_details.png)
-*Details of query optimization and execution metrics*
+![Query Details](screenshot/query.png)
+
 
 ### 4. Successful Pipeline Execution
-![Pipeline Success](screenshots/successful_run.png)
-*Complete pipeline execution with all transformations and actions*
+![Pipeline Success](screenshot/execution.png)
+
 
